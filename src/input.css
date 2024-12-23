@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* creating own components and utilities */
+
+@layer components {
+  .btn {
+    @apply py-1 px-3  font-bold text-center text-white border-4  ease-in hover:bg-white dark:hover:bg-slate-700 hover:border-gray-200 rounded-full duration-100;
+  }
+
+  .emeraldBtn {
+    @apply bg-mainC  border-mainC hover:text-mainC  focus:border-mainC;
+  }
+}
+
+@layer utilities {
+  .white-shadow {
+    box-shadow: inset 0px 0px 10px #fff;
+    border: 4px solid #fffefe;
+    transition: 0.2s;
+  }
+}
